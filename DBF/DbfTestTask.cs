@@ -21,7 +21,7 @@ namespace DbfTests
             var reader = new DbfReader();
             var values = reader.ReadValues(@".\Data\ELEKTRO\E01\E600DI01\128.dbf");
 
-            // put all DataValues into ONE ordered (by timestamp) list of OutputRow (each timestamp shall exist only once)
+            // put all DataValues into ONE ordered (by timestamp) list of OutputRow (each timestamp shall exist only once, each file should be like a column)
             // the OutputRow has 2 lists: 1 static one for the headers (directory path of file) and one for the values (values of all files (same timestamp) must be merged into one OutputRow)
             var outputs = new List<OutputRow>();
 
