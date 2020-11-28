@@ -49,12 +49,16 @@
     <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbfDataLoader.cs" />
     <Compile Include="DbfTestTask.cs" />
     <Compile Include="DbfReader.cs" />
     <Compile Include="OutputRow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\ELEKTRO\E01\E600DI01\000.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Data\ELEKTRO\E01\E600DI01\128.DBF">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
